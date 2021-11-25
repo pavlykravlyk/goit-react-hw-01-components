@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import styles from './Profile.module.css'
 
 const Profile = ({
   username,
@@ -10,26 +11,26 @@ const Profile = ({
   likes,
 }) => {
   return (
-    <div className="profile" key={tag}>
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+    <div className={styles.Profile} key={tag}>
+      <div className={styles.Description}>
+        <img src={avatar} alt={username} className={styles.Avatar} />
+        <p className={styles.Name}>{username}</p>
+        <p className={styles.Tag}>@{tag}</p>
+        <p className={styles.Location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={styles.Stats}>
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+          <span className={styles.Label}>Followers</span>
+          <span className={styles.Quantity}>{followers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+          <span className={styles.Label}>Views</span>
+          <span className={styles.Quantity}>{views}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <span className={styles.Label}>Likes</span>
+          <span className={styles.Quantity}>{likes}</span>
         </li>
       </ul>
     </div>
