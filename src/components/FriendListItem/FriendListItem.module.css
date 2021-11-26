@@ -1,0 +1,16 @@
+.Status {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.Avatar {
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin-left: 10px;
+}
+
+.Name {
+  margin-left: 10px;
+}

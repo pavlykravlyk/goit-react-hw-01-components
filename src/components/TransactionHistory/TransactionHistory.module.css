@@ -1,0 +1,22 @@
+.TransactionHistory {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  border: 1px solid gray;
+}
+
+.TableHead {
+  height: 40px;
+  text-transform: uppercase;
+  color: white;
+  background-color: cornflowerblue;
+}
+
+.TableItem {
+  height: 35px;
+}
+
+.TableItem:nth-child(odd) {
+  background-color: gainsboro;
+}

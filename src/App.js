@@ -1,4 +1,6 @@
 import './App.css';
+import Container from 'components/Container/Container';
+import Section from 'components/Section/Section';
 import Profile from 'components/Profile/Profile';
 import user from './user.json';
 import Statistics from 'components/Statistics/Statistics';
@@ -10,8 +12,8 @@ import transactions from './transactions.json';
 
 const App = () => {
   return (
-    <>
-      <div>
+    <Container>
+      <Section>
         <Profile
           username={user.username}
           tag={user.tag}
@@ -21,18 +23,18 @@ const App = () => {
           views={user.stats.views}
           likes={user.stats.likes}
         />
-      </div>
-      <div>
+      </Section>
+      <Section>
         <Statistics title="Upload stats" stats={data} />
         <Statistics stats={data} />
-      </div>
-      <div>
+      </Section>
+      <Section>
         <FriendList friends={friends} />
-      </div>
-      <div>
-        <TransactionHistory items={transactions} />;
-      </div>
-    </>
+      </Section>
+      <Section>
+        <TransactionHistory items={transactions} />
+      </Section>
+    </Container>
   );
 };
 

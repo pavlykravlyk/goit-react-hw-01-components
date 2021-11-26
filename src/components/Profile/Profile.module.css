@@ -15,19 +15,16 @@ ul {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid gray;
-  width: 320px;
-  padding: 15px;
+  width: 300px;
 }
 
 .Description {
-  /* composes: Profile; */
   background-color: white;
-  padding: 30px;
+  padding: 20px;
 }
 
 .Avatar {
-  margin-bottom: 20px;
-
+  margin-bottom: 15px;
   width: 150px;
   height: auto;
   border: 1px solid gray;
@@ -53,14 +50,14 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: snow;
-  /* border: 1px solid gray; */
+  background-color: gainsboro;
+  border-top: 1px solid gray;
+   padding: 10px;
 }
 
 .Stats > li {
   display: inherit;
   flex-direction: column;
-  /* border: 1px solid gray; */
 }
 
 .Label {

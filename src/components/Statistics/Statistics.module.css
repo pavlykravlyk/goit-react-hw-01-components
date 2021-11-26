@@ -1,0 +1,29 @@
+.Statistics {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border: 1px solid gray;
+}
+
+.Title {
+  text-transform: uppercase;
+}
+
+.StatList {
+  display: flex;
+  justify-content: center;
+}
+
+.StatListItem {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: white;
+}
+
+.Label {
+  margin-bottom: 10px;
+}
+
+.Percentage{}
